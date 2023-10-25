@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+background-color:antiquewhite;}
+.container{
+     margin:1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-evenly ;
+    gap: 15px;
+    margin: auto;
+    margin-top: 10%;
+
+    padding: 15px;
+    width: 50%;
+    height: fit-content;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,179,29,1) 49%, rgba(252,176,69,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.question{
+    grid-column: 1/-1;
+    justify-self: start;
+    color: aqua;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div{
+    justify-self: start;
+    justify-content: space-around;
+    align-self: stretch;
+}
+.option{
+    border: red solid 2px;
+    border-radius: 5px;
+    
+    
+}
+.option button{
+    background-color: darkviolet;
+    color:blanchedalmond;
+    font-size: 20px;
+}
+.nav button{
+background-color: red;
+color:chartreuse;
+font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.submit button{
+    background-color: orange;
+    font-size: 20px;
+}
+.submit{
+    grid-column: 1/-1;
+   
+    margin: 2%;
+    border: solid black;
+}
+
+.submit :hover{
+    background-color: blueviolet;
+}
+@media (max-width:768px) {
+    .container{
+        width: 90%;
+    }
+    
+}
+
+.option-button {
+    background-color: white;
+    color: black;
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .option-button.clicked {
+    background-color: green;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
