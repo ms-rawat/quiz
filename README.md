@@ -29,14 +29,14 @@ Welcome to the official repository for the React application developed by Build 
 ## Getting Started
 
 Follow these steps to get started with the application:
-# 1. Clone the Repository
+**1. Clone the Repository**
 git clone https://github.com/<your-username>/build-with-innovation-private-limited.git
 
-# 2. Install Packages
+** 2. Install Packages**
 cd build-with-innovation-private-limited
 npm install
 
-# 3. Start the Development Server
+** 3. Start the Development Server**
 npm start
 
 ***contibution are welcomed***   
